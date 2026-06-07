@@ -612,7 +612,12 @@ async function callGemini(prompt) {
 
             const prompt = promptGenerator(input);
             const text = await callGemini(prompt);
-            contentDiv.innerHTML = text.replace(/\n/g, '<br>');
+
+            // 安全弁：もしtextが空っぽ（undefinedやnull）なら、エラーメッセージを代入する
+            const safeText = text || "申し訳ありません。現在、神様との交信が少し遠いようです。しばらくしてからもう一度お試しください。";
+
+// 安全なテキストに対して改行コードの置き換えを行う
+contentDiv.innerHTML = safeText.replace(/\n/g, '<br>');
         }
 
         function drawOmikuji() {
