@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溝咋神社 | 國生みの社</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Shippori Mincho', 'Noto Serif JP', serif;
+        }
+        .hero-text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #b45309; /* amber-700 */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-stone-900/90 text-white backdrop-blur-sm shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold tracking-widest">溝咋神社</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">由緒</a>
+                        <a href="#deities" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">ご祭神</a>
+                        <a href="#treasures" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">社宝</a>
+                        <a href="#events" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">行事</a>
+                        <a href="#character" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">キャラクター</a>
+                        <a href="#ai-shrine" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">AI社務所</a>
+                        <a href="#donation" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors text-amber-200">ご寄付</a>
+                        <a href="#access" class="hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">アクセス</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- 画像配置: 一の鳥居より参道を望む -->
+            <img src="一の鳥居より参道を望む.jpg" alt="一の鳥居より参道を望む" class="w-full h-full object-cover fade-in">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="relative z-10 text-center text-white px-4">
+            <p class="text-lg md:text-2xl mb-4 tracking-[0.5em] hero-text-shadow">國生みの社</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-widest hero-text-shadow">溝咋神社</h1>
+            <p class="text-base md:text-lg max-w-2xl mx-auto leading-loose hero-text-shadow">
+                古事記・日本書紀に記された歴史。<br>
+                五十鈴媛命を祀る、悠久の杜。
+            </p>
+        </div>
+    </div>
+
+    <!-- About Section (由緒) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 tracking-widest">由緒</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            <div class="prose prose-lg prose-stone mx-auto text-justify leading-relaxed">
+                <p class="mb-6">
+                    『古事記』には、三島湟咋（みしまのみぞくい）の娘である勢夜陀多良比売（せやだたらひめ）を大物主命（事代主命）が見初めて生んだ伊須気余理比売（いすけよりひめ）が、初代神武天皇の正式な皇后となったと記されています。
+                </p>
+                <p class="mb-6">
+                    本社は、三島湟咋こと溝咋耳命、勢夜陀多良比売こと溝咋玉櫛媛命、そして皇后となられた五十鈴媛命を祀り、第十代崇神天皇の頃に当神社の地に創建されたと伝えられています。
+                </p>
+                <p>
+                    江戸時代までは朝廷をはじめ公家、大名、商人、農民の信仰が厚いお社でした。明治元年と九年の安威川決壊により社殿・社領が荒廃し、上ノ宮・下ノ宮とあった社も明治四十二年に下ノ宮に併合され、現在に至ります。
+                </p>
+            </div>
+            
+            <!-- 画像配置: タブノき -->
+            <div class="mt-12 flex flex-col items-center">
+                <figure class="max-w-lg w-full">
+                    <img src="タブノき.jpg" alt="境内のタブノキ" class="rounded-lg shadow-xl w-full h-auto">
+                    <figcaption class="text-center text-sm text-stone-500 mt-2 italic">境内のタブノキ（ご神木・保存樹木）</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deities Section (ご祭神) -->
+    <section id="deities" class="py-20 bg-stone-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 tracking-widest">ご祭神</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+                <p class="mt-4 text-stone-600">当神社にお祀りされている神々</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-amber-600 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">媛蹈鞴五十鈴媛命</h3>
+                    <p class="text-xs text-stone-500 mb-4">ひめたたらいすずひめのみこと</p>
+                    <p class="text-sm text-stone-700">神武天皇の正妃（皇后）。才色兼備と称えられた方です。</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-amber-600 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">溝咋玉櫛媛命</h3>
+                    <p class="text-xs text-stone-500 mb-4">みぞくいたまくしひめのみこと</p>
+                    <p class="text-sm text-stone-700">五十鈴媛命の母神。</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-amber-600 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">溝咋耳命</h3>
+                    <p class="text-xs text-stone-500 mb-4">みぞくいみみのみこと</p>
+                    <p class="text-sm text-stone-700">この地の古い豪族、三島溝咋の祖神。</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-stone-400 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">天日方奇日方命</h3>
+                    <p class="text-xs text-stone-500 mb-4">あめのひかたくしなかたのみこと</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-stone-400 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">素盞鳴命</h3>
+                    <p class="text-xs text-stone-500 mb-4">すさのおのみこと</p>
+                    <p class="text-sm text-stone-700">出雲系神統の祖。</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-stone-400 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">天児屋根命</h3>
+                    <p class="text-xs text-stone-500 mb-4">あめのこやねのみこと</p>
+                    <p class="text-sm text-stone-700">藤原氏の祖神。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treasures Section (社宝) -->
+    <section id="treasures" class="py-20 bg-stone-900 text-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4 tracking-widest">社宝</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-4 text-stone-400">歴史を伝える貴重な文化財</p>
+            </div>
+
+            <!-- 暁の鏡（独立配置・枠なし・そのまま貼り付け） -->
+            <div class="mb-24 bg-gradient-to-b from-stone-800 to-stone-900 p-10 rounded-2xl border border-amber-600/30 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
+                
+                <div class="flex flex-col items-center text-center">
+                    <div class="mb-2 text-amber-500 tracking-widest text-sm font-bold uppercase">Important Cultural Property</div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-8 text-white">暁の鏡 <span class="text-lg font-normal text-stone-400 ml-2">（あかつきのかがみ）</span></h3>
+                    
+                    <!-- 鏡の画像（CSSによる加工なし・そのまま表示） -->
+                    <div class="mb-8 flex justify-center">
+                         <!-- 画像ファイルは「暁の鏡(径19㎝ 高1.6㎝)1.jpg」を使用 -->
+                         <img src="暁の鏡(径19㎝ 高1.6㎝)1.jpg" alt="暁の鏡" class="max-w-full h-auto w-auto object-contain" style="max-height: 400px;">
+                    </div>
+
+                    <div class="max-w-2xl text-stone-300 leading-relaxed">
+                        <p class="mb-4">
+                            径19cm 高1.6cm。当神社を代表する社宝であり、伝説によれば第四十五代聖武天皇や第五十三代淳和天皇の崇敬厚く、雨を降らせて干害を救ったと伝えられています。
+                        </p>
+                        <p>
+                            「暁」の名が示す通り、闇を照らし希望や始まりを象徴する鏡として、古来より大切に保管されてきました。その神秘的な輝きは、今もなお見る者を魅了します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-20">
+                <!-- Treasure 1: 祇園祭礼図金屏風 -->
+                <div class="flex flex-col lg:flex-row items-center gap-8">
+                    <div class="lg:w-1/2">
+                        <!-- 画像配置: 祇園祭礼図金屏風 -->
+                        <figure>
+                            <img src="祇園祭礼図金屏風（六曲一双紙本金地著色各縦160.5㎝×横363.0㎝）.jpg" alt="祇園祭礼図金屏風" class="rounded shadow-2xl border border-stone-700 w-full h-auto">
+                            <figcaption class="text-stone-500 text-xs mt-2 text-right">六曲一双紙本金地著色 各縦160.5㎝×横363.0㎝</figcaption>
+                        </figure>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-bold mb-3 text-amber-500">祇園祭礼図山鉾絵金屏風</h3>
+                        <p class="text-stone-400 mb-4 text-sm">江戸時代十八世紀</p>
+                        <p class="leading-relaxed text-stone-300">
+                            江戸時代中期の京都・祇園祭の様子が鮮やかに描かれており、当時の祭礼の熱気や山鉾の装飾を今に伝える貴重な資料です。
+                            六曲一双の壮大なスケールで描かれた金屏風は、当神社の最も重要な社宝の一つです。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Other Treasures List -->
+                <div class="bg-stone-800 p-8 rounded-lg mt-8">
+                    <h4 class="text-xl font-bold mb-4 border-b border-stone-600 pb-2">その他の主な社宝</h4>
+                    <ul class="list-disc list-inside space-y-2 text-stone-300">
+                        <li>後西天皇（第百十代）筆書の掛軸</li>
+                        <li>土佐光起筆 天満宮像</li>
+                        <li>狩野元信筆 渡唐天人像（江戸時代十七世紀）</li>
+                        <li>三条小鍛治宗近作の剣</li>
+                        <li>狩野派の法眼春ト筆の額</li>
+                        <li>森祖仙筆 絵馬</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section (行事) -->
+    <section id="events" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 tracking-widest">祭礼・行事</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Spring Festival -->
+                <div class="border border-stone-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-amber-50 p-6 border-b border-amber-100">
+                        <span class="inline-block bg-amber-600 text-white text-xs px-2 py-1 rounded mb-2">5月5日（祝）</span>
+                        <h3 class="text-2xl font-bold text-stone-800">春季例祭（春祭り）</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-stone-600 mb-4">
+                            みんなで楽しもう！ご家族お友達を誘って遊びに来てください。
+                        </p>
+                        <ul class="space-y-2 text-stone-700 text-sm">
+                            <li class="flex items-start">
+                                <span class="text-amber-600 mr-2">●</span>
+                                <span>農産物直売所（午前10時〜完売終了）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-amber-600 mr-2">●</span>
+                                <span>氏子店・業者屋台の出店</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-amber-600 mr-2">●</span>
+                                <span>大道芸・歌・落語・紙芝居（午後〜午後4時）</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pond Cleaning -->
+                <div class="border border-stone-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-cyan-50 p-6 border-b border-cyan-100">
+                        <span class="inline-block bg-cyan-600 text-white text-xs px-2 py-1 rounded mb-2">環境保全</span>
+                        <h3 class="text-2xl font-bold text-stone-800">溝咋池浄化作戦</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-stone-600 mb-4">
+                            EM団子（有用微生物群）を池に投げ込み、ヘドロを分解して蛍や亀が住める生態系に戻す活動です。
+                        </p>
+                        <div class="bg-stone-50 p-4 rounded text-sm text-stone-600">
+                            <strong>EM団子とは？</strong><br>
+                            土壌改良を目的に開発された技術を応用した泥団子。汚泥のたまった池に投入するだけで水質浄化が期待できます。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                 <p class="text-stone-600">
+                    御朱印（初穂料500円）、おみくじ、御守等は社務所・絵馬堂にて承っております。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Section (Renamed from Contest) -->
+    <section id="character" class="py-20 bg-stone-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 tracking-widest">五十鈴姫イメージキャラクター</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+                <p class="mt-4 text-stone-600">才色兼備な皇后・五十鈴媛命をモチーフにしたキャラクター</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-stone-200 overflow-hidden p-8 md:p-12">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-full md:w-1/2 prose prose-stone">
+                        <p class="leading-relaxed">
+                            当神社の主祭神である媛蹈鞴五十鈴媛命（ひめたたらいすずひめのみこと）は、その才色兼備ぶりから初代神武天皇に見初められ、皇后となられたと伝えられています。
+                        </p>
+                        <p class="leading-relaxed">
+                            この故事にちなみ、現代に蘇った五十鈴姫のイメージキャラクターが誕生しました。神社の魅力を伝える存在として、皆様に愛されるキャラクターを目指しています。
+                        </p>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <!-- 五十鈴姫キャラクター画像配置エリア -->
+                        <div class="w-auto h-auto max-w-sm">
+                            <img src="五十鈴姫キャラクター.jpg" alt="五十鈴姫キャラクター" class="rounded-lg shadow-md border-4 border-amber-200" onerror="this.onerror=null;this.src='https://placehold.co/400x400/fff7ed/b45309?text=Character+Image';">
+                            <p class="text-center text-xs text-stone-500 mt-2">五十鈴姫イメージキャラクター</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Feature Section (Gemini) -->
+    <section id="ai-shrine" class="py-20 bg-amber-50 border-y border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-bold tracking-widest text-sm">Gemini AI POWERED</span>
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 tracking-widest mt-2">AI社務所・祈願</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+                <p class="mt-4 text-stone-600">最新のAI技術で、神社の知識やお導きを提供します。</p>
+            </div>
+
+            <!-- Grid Layout for 5 features -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Feature 1: AI Omikuji -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-amber-100 flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-2xl">🥠</div>
+                        <h3 class="text-lg font-bold text-stone-800">AI おみくじ</h3>
+                    </div>
+                    <p class="text-xs text-stone-500 mb-4">悩みや願いから、あなただけのおみくじを引きます。</p>
+                    
+                    <div class="flex-grow space-y-3">
+                        <textarea id="omikuji-input" rows="2" class="w-full p-3 border border-stone-300 rounded-lg focus:ring-1 focus:ring-amber-500 focus:border-transparent outline-none resize-none bg-stone-50 text-sm" placeholder="（例）健康について心配です。"></textarea>
+                        <button onclick="drawOmikuji()" class="w-full bg-amber-600 text-white text-sm font-bold py-2 px-3 rounded-lg shadow hover:bg-amber-700 transition flex items-center justify-center gap-2">
+                            <span>引く</span>✨
+                        </button>
+                    </div>
+                    <div id="omikuji-result" class="mt-4 hidden bg-stone-50 p-3 rounded border border-stone-200 text-sm">
+                        <div id="omikuji-content" class="text-stone-800 whitespace-pre-wrap font-serif"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: AI Shrine Guide -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-stone-200 flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center text-2xl">⛩️</div>
+                        <h3 class="text-lg font-bold text-stone-800">AI 歴史案内</h3>
+                    </div>
+                    <p class="text-xs text-stone-500 mb-4">由緒や神様についてのご質問にお答えします。</p>
+
+                    <div class="flex-grow space-y-3">
+                        <textarea id="guide-input" rows="2" class="w-full p-3 border border-stone-300 rounded-lg focus:ring-1 focus:ring-stone-500 focus:border-transparent outline-none resize-none bg-stone-50 text-sm" placeholder="（例）五十鈴媛命とは？"></textarea>
+                        <button onclick="askGuide()" class="w-full bg-stone-800 text-white text-sm font-bold py-2 px-3 rounded-lg shadow hover:bg-stone-900 transition flex items-center justify-center gap-2">
+                            <span>質問</span>✨
+                        </button>
+                    </div>
+                    <div id="guide-result" class="mt-4 hidden bg-stone-50 p-3 rounded border border-stone-200 text-sm">
+                        <div id="guide-content" class="text-stone-800 whitespace-pre-wrap"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: AI Prayer (Norito) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-cyan-100 flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-cyan-50 rounded-full flex items-center justify-center text-2xl">🙏</div>
+                        <h3 class="text-lg font-bold text-stone-800">AI 願掛け祝詞</h3>
+                    </div>
+                    <p class="text-xs text-stone-500 mb-4">願い事を神道の「祝詞」の形式に変換し、最適な神様へ捧げます。</p>
+
+                    <div class="flex-grow space-y-3">
+                        <textarea id="norito-input" rows="2" class="w-full p-3 border border-stone-300 rounded-lg focus:ring-1 focus:ring-cyan-600 focus:border-transparent outline-none resize-none bg-stone-50 text-sm" placeholder="（例）試験合格したい。"></textarea>
+                        <button onclick="composeNorito()" class="w-full bg-cyan-700 text-white text-sm font-bold py-2 px-3 rounded-lg shadow hover:bg-cyan-800 transition flex items-center justify-center gap-2">
+                            <span>作成</span>✨
+                        </button>
+                    </div>
+                    <div id="norito-result" class="mt-4 hidden bg-stone-50 p-3 rounded border border-stone-200 text-sm">
+                        <div id="norito-content" class="text-stone-800 whitespace-pre-wrap font-serif"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: AI Dream Interpretation (New) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-indigo-100 flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-2xl">💤</div>
+                        <h3 class="text-lg font-bold text-stone-800">AI 夢解き</h3>
+                    </div>
+                    <p class="text-xs text-stone-500 mb-4">見た夢の内容を教えてください。神道の観点からメッセージを読み解きます。</p>
+
+                    <div class="flex-grow space-y-3">
+                        <textarea id="dream-input" rows="2" class="w-full p-3 border border-stone-300 rounded-lg focus:ring-1 focus:ring-indigo-600 focus:border-transparent outline-none resize-none bg-stone-50 text-sm" placeholder="（例）白い蛇が出てくる夢を見ました。"></textarea>
+                        <button onclick="interpretDream()" class="w-full bg-indigo-700 text-white text-sm font-bold py-2 px-3 rounded-lg shadow hover:bg-indigo-800 transition flex items-center justify-center gap-2">
+                            <span>夢解き</span>✨
+                        </button>
+                    </div>
+                    <div id="dream-result" class="mt-4 hidden bg-stone-50 p-3 rounded border border-stone-200 text-sm">
+                        <div id="dream-content" class="text-stone-800 whitespace-pre-wrap font-serif"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 5: AI En-musubi (Matchmaking) (New) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-pink-100 flex flex-col h-full md:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-2xl">❤️</div>
+                        <h3 class="text-lg font-bold text-stone-800">AI 良縁・縁結び相談</h3>
+                    </div>
+                    <p class="text-xs text-stone-500 mb-4">
+                        当神社の五十鈴媛命と神武天皇は「一目惚れ」から結ばれたご夫婦です。<br>
+                        恋愛、結婚、人間関係の悩みを打ち明けてください。ご祭神の物語になぞらえてアドバイスします。
+                    </p>
+
+                    <div class="flex-grow space-y-3">
+                        <textarea id="love-input" rows="2" class="w-full p-3 border border-stone-300 rounded-lg focus:ring-1 focus:ring-pink-600 focus:border-transparent outline-none resize-none bg-stone-50 text-sm" placeholder="（例）片思いの相手がいますが、なかなか話しかけられません。背中を押してください。"></textarea>
+                        <button onclick="consultLove()" class="w-full bg-pink-600 text-white text-sm font-bold py-2 px-3 rounded-lg shadow hover:bg-pink-700 transition flex items-center justify-center gap-2">
+                            <span>相談する</span>✨
+                        </button>
+                    </div>
+                    <div id="love-result" class="mt-4 hidden bg-stone-50 p-3 rounded border border-stone-200 text-sm">
+                        <div id="love-content" class="text-stone-800 whitespace-pre-wrap font-serif"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section (New) -->
+    <section id="donation" class="py-20 bg-stone-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 tracking-widest">御奉賛・ご寄付のお願い</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-stone-200 overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+                        <div class="w-full md:w-2/3 prose prose-stone">
+                            <h3 class="text-xl font-bold mb-4 text-stone-800">本殿修復ならびに社宝保全のために</h3>
+                            <p>
+                                溝咋神社は古来より地域の人々に支えられ、数々の歴史と伝統を現代に伝えてまいりました。
+                                しかしながら、時の経過と共に社殿の老朽化が進み、平成30年の大阪北部地震におきましては本殿も被害を受けました。
+                            </p>
+                            <p>
+                                また、「祇園祭礼図金屏風」や「暁の鏡」をはじめとする貴重な社宝の数々も、
+                                後世に伝えていくためには継続的な修復・保全活動が必要です。
+                            </p>
+                            <p>
+                                地域の宝、国の宝であるこれらの文化財を守り抜くため、
+                                皆様からの温かいご支援、ご奉賛を賜りたく、心よりお願い申し上げます。
+                            </p>
+                        </div>
+                        <div class="w-full md:w-1/3 bg-stone-100 p-6 rounded-lg border border-stone-200">
+                             <!-- 本殿画像の追加 -->
+                             <div class="mb-4 rounded-lg overflow-hidden shadow-md">
+                                <img src="本殿.jpg" alt="溝咋神社本殿" class="w-full h-auto object-cover">
+                                <p class="text-xs text-stone-500 text-center mt-1">溝咋神社本殿</p>
+                            </div>
+
+                            <h4 class="font-bold text-stone-800 mb-2 border-b border-stone-300 pb-2">ご寄付の使途</h4>
+                            <ul class="text-sm text-stone-600 space-y-2 list-disc list-inside">
+                                <li>溝咋神社本殿の修復工事</li>
+                                <li>社宝（金屏風、鏡等）の修復・保全</li>
+                                <li>境内環境の整備・維持管理</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 p-6 rounded-lg border border-amber-200 text-center">
+                        <h4 class="text-lg font-bold text-amber-900 mb-2">お問い合わせ・受付</h4>
+                        <p class="text-stone-700 mb-4">
+                            ご奉賛・ご寄付に関する詳細は、溝咋神社氏子会までお問い合わせください。
+                        </p>
+                        <div class="inline-block bg-white px-6 py-3 rounded-full border-2 border-amber-500 shadow-sm">
+                            <span class="text-stone-500 text-xs block mb-1">溝咋神社社務所・氏子会</span>
+                            <a href="tel:080-2148-6922" class="text-2xl font-bold text-stone-800 hover:text-amber-600 transition">080-2148-6922</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section (アクセス) -->
+    <section id="access" class="py-20 bg-stone-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-4 tracking-widest">アクセス</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-8 md:p-12 text-center">
+                    <h3 class="text-2xl font-bold mb-6">溝咋神社</h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="text-lg">
+                            <span class="font-bold block text-stone-500 text-sm mb-1">住所</span>
+                            〒567-0842 大阪府茨木市五十鈴町9-21
+                        </p>
+                        <p class="text-lg">
+                            <span class="font-bold block text-stone-500 text-sm mb-1">電話番号</span>
+                            080-2148-6922
+                        </p>
+                    </div>
+
+                    <div class="text-stone-600 text-sm border-t border-stone-200 pt-6">
+                        <p class="mb-2">※駐車場はありません。自転車は指定の駐輪場にお停めください。</p>
+                        <p>※ゴミのポイ捨ては絶対におやめください。</p>
+                    </div>
+                </div>
+                <!-- Map Placeholder (Google Maps Embed would go here) -->
+                <div class="h-64 bg-stone-200 flex items-center justify-center">
+                    <p class="text-stone-500 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        地図表示エリア（埋め込みマップ）
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <h4 class="font-bold text-stone-800 mb-2">溝咋神社史研究所</h4>
+                <p class="text-sm text-stone-600">
+                    溝咋神社史編纂・編集・発行、社宝の考察・修復・保全活動を行っています。<br>
+                    皆様の修復資金募金へのご協力をお願い申し上げます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-lg font-bold text-white tracking-widest">溝咋神社</span>
+            </div>
+            <div class="text-sm">
+                &copy; Mizokui Shrine. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gemini API Logic -->
+    <script>
+        const apiKey = ""; // API key provided by environment
+        
+        // Shrine Context for AI
+        const shrineContext = `
+        あなたは大阪府茨木市にある「溝咋神社（みぞくいじんじゃ）」のAIです。
+        【基本情報】
+        ・祭神：媛蹈鞴五十鈴媛命（ひめたたらいすずひめのみこと／神武天皇の皇后）、溝咋玉櫛媛命（みぞくいたまくしひめ／五十鈴媛の母）、溝咋耳命（みぞくいみみ／祖神）、天日方奇日方命、素盞鳴命、天児屋根命。
+        ・由緒：古事記・日本書紀に記載あり。五十鈴媛命は才色兼備で神武天皇に見初められた（一目惚れされたという記述もある）。崇神天皇の時代に創建。
+        ・社宝：祇園祭礼図山鉾絵金屏風、暁の鏡、天満宮像など。
+        
+        【神様のご神徳】
+        ・五十鈴媛命・溝咋玉櫛媛命：良縁、安産、家内安全、女性守護。
+        ・天児屋根命：学業成就、出世、祝詞の神。
+        ・素盞鳴命：厄除け、災難除け。
+        ・溝咋耳命：五穀豊穣、土地守護。
+
+        【新機能用コンテキスト】
+        ・夢占い（夢解き）：日本の神道や民俗学的な解釈を用いて、夢の吉凶やメッセージを伝える。悪夢であれば「祓い」の言葉を添える。
+        ・縁結び相談：五十鈴媛命が神武天皇に見初められた故事に基づき、誠実さや運命の出会いを大切にするアドバイスを行う。
+
+        ・口調：神社の厳かな雰囲気に合わせ、丁寧で落ち着いた、少し古風な言葉遣い。
+        `;
+
+async function callGemini(prompt) {
+    try {
+        const response = await fetch('/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                prompt: shrineContext + "\n\n" + prompt
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        return data.result;
+    } catch (error) {
+        console.error("Gemini API Error:", error);
+
+        return "申し訳ありません。現在、神様との交信が少し遠いようです。しばらくしてからもう一度お試しください。";
+    }
+}
+
+        // Shared helper for UI logic
+        async function handleAIInteraction(inputId, resultId, contentId, promptGenerator) {
+            const input = document.getElementById(inputId).value;
+            const resultDiv = document.getElementById(resultId);
+            const contentDiv = document.getElementById(contentId);
+            
+            if (!input.trim() && inputId !== 'omikuji-input') return alert("入力してください。"); // Omikuji can be empty
+
+            resultDiv.classList.remove('hidden');
+            contentDiv.innerHTML = '<div class="text-center"><div class="loader"></div><p class="mt-2 text-xs text-stone-500">お言葉を受け取っています...</p></div>';
+
+            const prompt = promptGenerator(input);
+            const text = await callGemini(prompt);
+            contentDiv.innerHTML = text.replace(/\n/g, '<br>');
+        }
+
+        function drawOmikuji() {
+            handleAIInteraction('omikuji-input', 'omikuji-result', 'omikuji-content', (input) => {
+                const userPrompt = input ? `参拝者の悩み・願い：${input}` : "参拝者は一般的な運勢を求めています。";
+                return `${userPrompt}\nおみくじを生成してください。\nフォーマット：\n【運勢】\n【和歌】\n【神様からのお言葉】（100文字程度）`;
+            });
+        }
+
+        function askGuide() {
+            handleAIInteraction('guide-input', 'guide-result', 'guide-content', (input) => {
+                return `参拝者からの質問：${input}\nこれに正確かつ丁寧に答えてください。`;
+            });
+        }
+
+        function composeNorito() {
+            handleAIInteraction('norito-input', 'norito-result', 'norito-content', (input) => {
+                return `参拝者の願い事：${input}\nこれに対する「簡易的な祝詞」を作成し、祈るべき神様を提案してください。\nフォーマット：\n【お祈りすべき神様】\n【奉納祝詞】（読み仮名付き）`;
+            });
+        }
+
+        function interpretDream() {
+            handleAIInteraction('dream-input', 'dream-result', 'dream-content', (input) => {
+                return `参拝者が見た夢：${input}\nこの夢を神道や日本の民俗学的な観点から「夢解き」してください。\n吉夢か、警告か、どのような心構えでいるべきか、優しく諭すように伝えてください。`;
+            });
+        }
+
+        function consultLove() {
+            handleAIInteraction('love-input', 'love-result', 'love-content', (input) => {
+                return `参拝者の恋愛・縁結びの悩み：${input}\n五十鈴媛命と神武天皇の故事（一目惚れ、才色兼備、運命の赤い糸的な要素）を踏まえ、恋愛成就や良縁のためのアドバイスをしてください。`;
+            });
+        }
+    </script>
+</body>
+</html>
