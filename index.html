@@ -588,7 +588,10 @@ async function callGemini(prompt) {
 
         const data = await response.json();
 
-        return data.result;
+        // ❌ 修正前: return data.result;
+        // ⭕ 修正後: Vercelから返ってくる「text」を受け取るように変更
+        return data.text; 
+        
     } catch (error) {
         console.error("Gemini API Error:", error);
 
